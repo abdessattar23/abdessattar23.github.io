@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Not Ready!!!</title>
+<meta name="viewport" content="width=device-width,scale=1.0" />
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Roboto:wght@700&display=swap");
+body {
+  display: grid;
+  place-items: center;
+  height: 90vh;
+  font-family: "Nunito Sans", sans-serif;
+}
+.countdown {
+  background: #eee;
+  height: 287px;
+  width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  flex-wrap: wrap;
+}
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.timer h3 {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+
+.counter {
+  display: flex;
+  max-width: fit-content;
+  gap: 0.75em;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+.counter__box {
+  text-align: center;
+  background: blue;
+  width: 89px;
+  height: 103px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0.25rem;
+}
+
+.counter__time {
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.counter__duration {
+  font-size: 0.8rem;
+  text-transform: capitalize;
+  margin: 0;
+  padding: 0;
+  color: #eee;
+}
+
+/* HELPERS */
+
+.dots {
+  font-size: 52px;
+  color: #002e46;
+  margin: -0.75rem;
+  padding: 0;
+}
+
+.exp {
+  font-size: 52px;
+  font-family: "Roboto", sans-serif;
+}
+
+.black-white {
+  background: linear-gradient(
+    to top,
+    #002e46 0%,
+    #002e46 50%,
+    #4d707f 50%,
+    #4d707f 100%
+  );
+}
+
+.sky-blue {
+  background: linear-gradient(
+    to top,
+    #009edb 0%,
+    #009edb 50%,
+    rgba(127, 206, 236, 0.95) 50%,
+    rgba(127, 206, 236, 0.95) 100%
+  );
+}
+
+</style>
+</head>
+<body>
+  <div class="timer">
+    <div class="counter">
+      <div class="counter__box black-white">
+        <p class="counter__time" id="days"></p>
+        <p class="counter__duration">days</p>
+      </div>
+      <div class="counter__box sky-blue">
+        <p class="counter__time" id="hours"></p>
+        <p class="counter__duration">hours</p>
+      </div>
+      <p class="dots">:</p>
+      <div class="counter__box sky-blue">
+        <p class="counter__time" id="minutes"></p>
+        <p class="counter__duration">minutes</p>
+      </div>
+      <p class="dots">:</p>
+      <div class="counter__box sky-blue">
+        <p class="counter__time" id="seconds"></p>
+        <p class="counter__duration">seconds</p>
+      </div>
+
+    </div>
+  </div>
+<script>
+var countDownDate = new Date("Jun 1, 2023 22:30:00").getTime();
+var x = setInterval(function() {
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+ var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        let countdownDays = document.getElementById("days");
+        let countdownHours = document.getElementById("hours");
+        let countdownMinutes = document.getElementById("minutes");
+        let countdownSeconds = document.getElementById("seconds");
+        countdownDays.innerHTML = days;
+        countdownHours.innerHTML = hours;
+        countdownMinutes.innerHTML = minutes;
+        countdownSeconds.innerHTML = seconds;
+  if (distance < 0) {
+    clearInterval(x);
+        countdownDays.innerHTML = '00';
+        countdownHours.innerHTML = '00';
+        countdownMinutes.innerHTML = '00';
+        countdownSeconds.innerHTML = '00';
+  }
+}, 1000);
+</script>
+</body>
+</html>
+
+
+
+
+
+
+

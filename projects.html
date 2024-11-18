@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="google-site-verification" content="qjZB6IzpSM0as-86oAniT6dozaEbNDV7JMlxs5geplg" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Abdessattar Elyagoubi</title>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<link rel="stylesheet" href="css/all.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="icon" href="imgs/favicon.ico" />
+		<!-- Start Google Fonts  -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet" />
+	</head>
+	<body class="page page-06" onload="localStorage.setItem('color_option','#fe6f1d')">
+		<video class="body-overlay" muted autoplay loop>
+			<source src="videos/background-06.mp4" type="video/mp4" />
+		</video>
+
+		<span class="icon-menu">
+			<span class="bar"></span>
+			<span class="bar"></span>
+		</span>
+
+		<div class="global-color">
+			<i class="setting-toggle fa-solid fa-gear"></i>
+
+			<div class="inner">
+				<div class="overlay"></div>
+				<div class="global-color-option">
+					<i class="close-settings fa-solid fa-xmark"></i>
+
+					<h2>Configuration</h2>
+					<div class="global-color-option-inner">
+						<p>Colors</p>
+						<div class="color-boxed">
+							<a href="#" data-color="#28e98c" class="color1 active"></a>
+							<a href="#" data-color="#e4af12" class="color2"></a>
+							<a href="#" data-color="#fe6f1d" class="color3"></a>
+							<a href="#" data-color="#14c5fd" class="color4"></a>
+							<a href="#" data-color="#c0c0c0" class="color5"></a>
+							<a href="#" data-color="#1338f3" class="color6"></a>
+							<a href="#" data-color="#f31313" class="color7"></a>
+							<a href="#" data-color="#ff99cc" class="color8"></a>
+						</div>
+		<!--				<p>THREE DIMENSIONAL SHAPES</p>
+						<ul class="themes">
+						<!--	<li>
+								<a href="index.html">3D Abstract Ball</a>
+							</li>
+							<li>
+								<a href="page-02.html">Network Plexus</a>
+							</li>
+							<li>
+								<a href="page-03.html">Water Waves</a>
+							</li>
+							<li>
+								<a href="page-04.html">Abstract Triangles</a>
+							</li>
+							<li>
+								<a href="page-05.html">Abstract Wave</a>
+							</li>
+							<li class="active">-->
+							<!--	<a href="page-06.html">Golden 3D Lines</a>
+							</li>
+						<!--	<li>
+								<a href="page-07.html">Solid Color</a>
+							</li>-->
+					<!--	</ul>-->
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="sidebar">
+			<div class="overlay"></div>
+			<div class="inner">
+				<div class="menu-wrap">
+					<p>Menu</p>
+					<ul class="menu">
+						<li>
+							<a href="#home" class="scroll-to active">
+								<i class="fa-solid fa-house"></i>
+								<span>Home</span>
+							</a>
+						</li>
+						<li>
+							<a href="#about" class="scroll-to">
+								<i class="fa-regular fa-user"></i>
+								<span>About</span>
+							</a>
+						</li>
+						<li>
+							<a
+								href="#services"
+								class="scroll-to d-flex align-items-center">
+								<i class="fa-solid fa-screwdriver-wrench"></i>
+								<span>Services</span>
+							</a>
+						</li>
+						<li>
+							<a href="#skills" class="scroll-to">
+								<i class="fa-solid fa-shapes"></i>
+								<span>Skills</span>
+							</a>
+						</li>
+						<li>
+							<a href="#portfolio" class="scroll-to">
+								<i class="fa-solid fa-grip-vertical"></i>
+								<span>Portfolios</span>
+							</a>
+						</li>
+						<li>
+							<a href="#contact" class="scroll-to">
+								<i class="fa-regular fa-envelope"></i>
+								<span>Contact</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="social">
+					<p>Social</p>
+					<ul>
+						<li>
+							<a
+								href="https://twitter.com/AbdessattarElya"
+								target="blank">
+								<i class="fa-brands fa-twitter"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://github.com/abdessattar23" target="blank">
+								<i class="fa-brands fa-github"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://dev.to/Abdessattar" target="blank">
+								<i class="fa-brands fa-dev"></i>
+							</a>
+						</li>
+						<li>
+							<a
+								href="https://instagram.com/abdessattar23"
+								target="blank">
+								<i class="fa-brands fa-instagram"></i>
+							</a>
+						</li>
+						<li>
+							<a
+								href="https://wa.me/+212674063125"
+								target="blank">
+								<i class="fa-brands fa-whatsapp"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<ul class="scroll-nav">
+			<li>
+				<a href="#home" class="scroll-to active">
+					<span>Home</span>
+					<i class="fa-solid fa-house"></i>
+				</a>
+			</li>
+			<li>
+				<a href="#about" class="scroll-to">
+					<span>About</span>
+					<i class="fa-regular fa-user"></i>
+				</a>
+			</li>
+			<li>
+				<a href="#services" class="scroll-to">
+					<span>Services</span>
+					<i class="fa-solid fa-screwdriver-wrench"></i>
+				</a>
+			</li>
+			<li>
+				<a href="#skills" class="scroll-to">
+					<span>Skills</span>
+					<i class="fa-solid fa-shapes"></i>
+				</a>
+			</li>
+			<li>
+				<a href="#portfolio" class="scroll-to">
+					<span>Portfolios</span>
+					<i class="fa-solid fa-grip-vertical"></i>
+				</a>
+			</li>
+			<li>
+				<a href="#contact" class="scroll-to">
+					<span>Contact</span>
+					<i class="fa-regular fa-envelope"></i>
+				</a>
+			</li>
+		</ul>
+
+		<div class="left-sidebar">
+			<div class="sidebar-header">
+				<!--<span class="logo"></span>-->
+				<h1><span>Abdessattar </span><span id="namep2">Elyagoubi</span></h1>
+			</div>
+			<!-- <img src="imgs/me.jpg" alt="" class="me" /> -->
+			<div class="img"></div>
+			<h2 class="email">elyagoubiabdessattar@gmail.com</h2>
+			<h2 class="address">Hay ElFath, Fez, Morocco</h2>
+			<p class="copyright">© 2024 Droiders. All Rights Reserved</p>
+			<ul class="social">
+				<li>
+					<a href="https://ma.linkedin.com/in/mohammed-abdessetar-elyagoubi-5780ba27b" target="blank">
+						<i class="fa-brands fa-linkedin"></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://github.com/abdessattar23" target="blank">
+						<i class="fa-brands fa-github"></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://dev.to/abdessattar" target="blank">
+						<i class="fa-brands fa-dev"></i>
+					</a>
+				</li>
+				<li>
+					<a
+						href="https://instagram.com/abdessattar23"
+						target="blank">
+						<i class="fa-brands fa-instagram"></i>
+					</a>
+				</li>
+			</ul>
+			<a href="https://wa.me/+212674063125" class="button">
+				<i class="fa-regular fa-envelope"></i>
+				<span>HIRE ME!</span>
+			</a>
+		</div>
+
+		<main class="droiders-main">
+			<div class="wrapper">
+				<div class="content">
+					<section class="home" id="home">
+						<div class="custom-container">
+							<div class="content content-width">
+								<div class="header">
+									<h4 class="subtitle">
+										<i class="fa-solid fa-house"></i>
+										<span>Introduce</span>
+									</h4>
+									<h1>
+										Hi I'm <span>Abdessattar Elyagoubi</span>
+										Full-Stack Developer
+									</h1>
+								</div>
+								<p>
+									I create complex websites fully functioning to all browsers without any tiny bug.
+								</p>
+								<a href="#portfolio" class="go-to-project-btn">
+									<img src="imgs/round-text.png" alt="" />
+									<i class="fa-solid fa-arrow-down-long"></i>
+								</a>
+								<div class="facts">
+									<div class="left">
+										<h1>03+</h1>
+										<p>years of<br />Experience</p>
+									</div>
+									<div class="right">
+										<h1>20+</h1>
+										<p>projects completed</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="about" id="about">
+						<div class="custom-container">
+							<div class="content content-width">
+								<div class="header">
+									<h4 class="subtitle">
+										<i class="fa-regular fa-user"></i>
+										<span>About</span>
+									</h4>
+									<h1>
+										As i'm
+										<span>Full-Stack Developer</span>
+									</h1>
+								</div>
+								<p class="text-center text-sm-start">
+									I have experience in creating server-side web applications using Nodejs, PHP and Flask. I have worked with various frameworks and
+									libraries such as React, Tailwind to build dynamic
+									and interactive websites that meet the client's
+									requirements and expectations. I have also used tools
+									such as Git, Github to manage the codebase, bundle
+									the assets and deploy the applications. Some of the
+									projects that I have worked on include a personal
+									portfolio website, a blog platform and a school system 
+									website.
+								</p>
+							</div>
+						</div>
+					</section>
+					<section class="services" id="services">
+						<div class="custom-container">
+							<div class="content content-width">
+								<div class="header">
+									<h4 class="subtitle">
+										<i class="fa-solid fa-screwdriver-wrench"></i>
+										<span>services</span>
+									</h4>
+									<h1>What <span>i do</span></h1>
+								</div>
+								<div class="services-items">
+									<div class="services-item">
+										<i class="fa-solid fa-tv"></i>
+										<h2>Websites & Applications</h2>
+										<p>
+											I can build Websites and Android/IOS/Desktop Applications<br />
+											using HTML, Javascript, Tailwind, PHP, Nodejs, ReactJs, ReactNative, Python.
+										</p>
+										<!--<span class="project">10 Projects</span>-->
+									</div>
+									<div class="services-item">
+										<i class="fa-solid fa-gamepad"></i>
+										<h2>UI/UX</h2>
+										<p>I can build websites and Applications with a user friendly interfaces with UI/UX</p>
+										<!--<span class="project">10 Projects</span>-->
+									</div>
+									<div class="services-item">
+										<i class="fa-solid fa-code"></i>
+										<h2>Clean Code</h2>
+										<p>
+											I can build websites and applications with clean and organized
+											code
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="skills" id="skills">
+						<div class="custom-container">
+							<div class="content content-width">
+								<div class="header">
+									<h4 class="subtitle">
+										<i class="fa-solid fa-shapes"></i>
+										<span>my skills</span>
+									</h4>
+									<h1>My <span>Advantages</span></h1>
+								</div>
+								<div class="row skills">
+									<div class="col-md-3">
+										<div class="skill">
+											<div class="inner">
+												<img src="imgs/skill-02.png" alt="" />
+												<h1 class="percent">100%</h1>
+											</div>
+											<p class="name">HTML</p>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="skill">
+											<div class="inner">
+												<img src="imgs/skill-03.png" alt="" />
+												<h1 class="percent">85%</h1>
+											</div>
+											<p class="name">CSS</p>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="skill">
+											<div class="inner">
+												<img src="imgs/skill-04.png" alt="" />
+												<h1 class="percent">85%</h1>
+											</div>
+											<p class="name">JavaScript</p>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="skill">
+											<div class="inner">
+												<img src="imgs/skill-05.png" alt="" />
+												<h1 class="percent">87%</h1>
+											</div>
+											<p class="name">Python</p>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="skill">
+											<div class="inner">
+												<img src="imgs/skill-06.png" alt="" />
+												<h1 class="percent">100%</h1>
+											</div>
+											<p class="name">BootStrap</p>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="skill">
+											<div class="inner">
+												<img src="imgs/skill-07.png" alt="" />
+												<h1 class="percent">60%</h1>
+											</div>
+											<p class="name">ReactJS</p>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="skill">
+											<div class="inner">
+												<img src="imgs/skill-08.png" alt="" />
+												<h1 class="percent">85%</h1>
+											</div>
+											<p class="name">Git</p>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="skill">
+											<div class="inner">
+												<img src="imgs/skill-09.png" alt="" />
+												<h1 class="percent">84%</h1>
+											</div>
+											<p class="name">PHP</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="portfolio" id="portfolio">
+						<div class="custom-container">
+							<div class="content content-width">
+								<div class="header">
+									<h4 class="subtitle">
+										<i class="fa-solid fa-grip-vertical"></i>
+										<span>portfolio</span>
+									</h4>
+									<h1>Featured <span>Projects</span></h1>
+								</div>
+								<div class="row portfolio-items">
+									<div class="col-md-12">
+										<div class="portfolio-item">
+											<div class="inner">
+												<img src="imgs/project-03.png" alt="" />
+
+												<ul class="skills">
+													<li>HTML</li>
+													<li>CSS</li>
+													<li>JS</li>
+													<li>PHP</li>
+													<li>BootStrap</li>
+												</ul>
+											</div>
+											<h2>
+												<a
+													onclick="event.preventDefault();show();"
+													href="#"
+													
+													>Portfoliyo - Dynamic</a
+												>
+											</h2>
+										</div>
+									</div>
+									<div class="col-md-12">
+										<div class="portfolio-item">
+											<div class="inner">
+												<img src="imgs/project-04.png" alt="" />
+
+												<ul class="skills">
+													<li>HTML</li>
+													<li>CSS</li>
+													<li>JS</li>
+													<li>Bootstrap</li>
+													<li>Nodejs</li>
+												</ul>
+											</div>
+											<h2>
+												<a
+													onclick="event.preventDefault();show();"
+													href="#"
+													
+													>MelodyMind - OnePage</a
+												>
+											</h2>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="portfolio-item">
+											<div class="inner">
+												<img src="imgs/project-01.png" alt="" />
+
+												<ul class="skills">
+													<li>HTML</li>
+													<li>CSS</li>
+													<li>JS</li>
+													<li>APIs</li>
+												</ul>
+											</div>
+											<h2>
+												<a
+													onclick="event.preventDefault();show();"
+													href="#"
+													
+													>R-Watch - Movies</a
+												>
+											</h2>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="portfolio-item">
+											<div class="inner">
+												<img src="imgs/project-05.png" alt="" />
+
+												<ul class="skills">
+													<li>HTML</li>
+													<li>CSS</li>
+													<li>JS</li>
+												</ul>
+											</div>
+											<h2>
+												<a
+													onclick="event.preventDefault();show();"
+													href="#"
+													
+													>This Portfolio</a
+												>
+											</h2>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="contact" id="contact">
+						<div class="custom-container">
+							<div class="content content-width">
+								<div class="header">
+									<h4 class="subtitle">
+										<i class="fa-regular fa-envelope"></i>
+										<span>contact</span>
+									</h4>
+									<h1>Let's work <span>Together</span></h1>
+								</div>
+							
+								<div class="row contact-items">
+									<div class="col-md-6">
+										<div class="contact-item">
+											<i class="fa-brands fa-whatsapp"></i>
+											<h2>WhatsApp</h2>
+											<p>+212674063125</p>
+											<a href="https://wa.me/+212674063125">
+												<span>Send a message</span>
+												<i class="fa-solid fa-paper-plane"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+
+<footer style="background:transparent;" class="">
+  <div class="container">
+    <div class="row" style="">
+    <div class="f" style="text-align:center;color:white">
+				
+					
+							<a
+								href="https://ma.linkedin.com/in/mohammed-abdessetar-elyagoubi-5780ba27b"
+								target="blank">
+								<i class="fa-brands fa-linkedin fa-2x"></i>
+							</a>
+					
+							<a href="https://github.com/abdessattar23" target="blank">
+								<i class="fa-brands fa-github fa-2x"></i>
+							</a>
+						
+							<a href="https://dev.to/Abdessattar" target="blank">
+								<i class="fa-brands fa-dev fa-2x"></i>
+							</a>
+					
+							<a
+								href="https://instagram.com/abdessattar23"
+								target="blank">
+								<i class="fa-brands fa-instagram fa-2x"></i>
+							</a>
+						
+							<a
+								href="https://wa.me/+212674063125"
+								target="blank">
+								<i class="fa-brands fa-whatsapp fa-2x"></i>
+							</a>
+							<br/>
+							<p class="copyright">© 2024 Droiders. All Rights Reserved</p>
+						
+				</div>
+    </div>
+    </div>
+</footer>
+		</main>
+		<div class="progress-bar"></div>
+		<script src="js/bootstrap.bundle.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

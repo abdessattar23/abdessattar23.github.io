@@ -1,0 +1,47 @@
+/********** FONT SETTINGS **********/
+
+@font-face {
+    font-family: "tabler-icons";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/tabler-icons_v3.31.0.woff2") format("woff2"), url("../fonts/tabler-icons.woff") format("woff"), url("../fonts/tabler-icons_v3.31.0.ttf") format("truetype")
+}
+
+.ti {
+    font-family: "tabler-icons" !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.ti-category-filled:before {
+    content: "\fb2e"
+}
+
+.ti-chevron-right:before {
+    content: "\ea61"
+}
+
+.ti-heart-handshake:before {
+    content: "\f0f3"
+}
+
+.ti-copy:before {
+    content: "\ea7a"
+}
+
+.ti-check:before {
+    content: "\ea5e"
+}
+
+.ti-school:before {
+    content: "\ecf7"
+}
+
+.ti-send-2:before {
+    content: "\fd5d"
+}

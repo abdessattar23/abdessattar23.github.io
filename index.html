@@ -1,610 +1,529 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="google-site-verification" content="qjZB6IzpSM0as-86oAniT6dozaEbNDV7JMlxs5geplg" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Mohammed Abdessetar Elyagoubi</title>
-		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-		<link rel="stylesheet" href="css/all.min.css" />
-		<link rel="stylesheet" href="css/bootstrap.min.css" />
-		<link rel="stylesheet" href="css/main.css" />
-		<link rel="icon" href="imgs/favicon.ico" />
-		<!-- Start Google Fonts  -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-			rel="stylesheet" />
-	</head>
-	<body class="page page-06" onload="localStorage.setItem('color_option','#fe6f1d')">
-		<video class="body-overlay" muted autoplay loop>
-			<source src="videos/background-06.mp4" type="video/mp4" />
-		</video>
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/css/tabler-icons.css">
 
-		<span class="icon-menu">
-			<span class="bar"></span>
-			<span class="bar"></span>
-		</span>
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <!-- FONTS -->
+    <link rel="preload" href="/assets/fonts/rajdhani-500.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="/assets/fonts/rajdhani-600.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="/assets/fonts/rajdhani-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <!-- PRIMARY META TAGS -->
+    <meta name="description" content="Full-Stack Developer with real production experience across frontend, backend, automation, and infrastructure. Specializing in Java ecosystems (Spring Boot, JEE) and modern web stacks (Angular, Next.js).">
+    <meta name="keywords" content="Full-Stack Developer, Java Developer, Spring Boot, JEE, Angular, Next.js, TypeScript, JavaScript, Node.js, Backend Developer, Automation Engineer, DevOps, Docker, Portfolio, Developer Portfolio">
+    <meta name="author" content="Mohamed Abdessattar Elyagoubi">
+    <meta name="robots" content="index, follow">
+    <!-- CANONICAL URL -->
+    <link rel="canonical" href="https://abdessattar.youcodee.com/">
+    <!-- SITEMAP -->
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://abdessattar.youcodee.com/sitemap.xml">
+    <!-- OPEN GRAPH META TAGS -->
+    <meta property="og:site_name" content="Mohamed Abdessattar Elyagoubi">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mohamed Abdessattar Elyagoubi - Full-Stack Developer">
+    <meta property="og:description" content="Full-Stack Developer with real production experience across frontend, backend, automation, and infrastructure. Specializing in Java ecosystems (Spring Boot, JEE) and modern web stacks (Angular, Next.js).">
+    <meta property="og:image" content="./og-img.png">
+    <meta property="og:url" content="https://abdessattar.youcodee.com/">
+    <!-- TWITTER CARD META TAGS -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@AbdessatarElya">
+    <meta name="twitter:site" content="@AbdessatarElya">
+    <meta name="twitter:title" content="Mohamed Abdessattar Elyagoubi - Full-Stack Developer">
+    <meta name="twitter:description" content="Full-Stack Developer with real production experience across frontend, backend, automation, and infrastructure. Specializing in Java ecosystems (Spring Boot, JEE) and modern web stacks (Angular, Next.js).">
+    <meta name="twitter:image" content="https://abdessattar.youcodee.com/og-img.png">
+    <!-- STRUCTURED DATA MARKUP -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org/",
+          "@type": "Person",
+          "name": "Mohamed Abdessattar Elyagoubi",
+          "url": "https://abdessattar.youcodee.com/",
+          "image": "https://abdessattar.youcodee.com/og-img.png",
+          "sameAs": [
+            "https://github.com/abdessattar-youcode",
+            "https://abdessattar.youcodee.com/"
+          ],
+          "jobTitle": "Full-Stack Developer"  
+        }
+    </script>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg">
+    <!-- ANDROID ICONS -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="36x36" href="./favicon/favicon-36x36.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="./favicon/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="./favicon/favicon-64x64.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="./favicon/favicon-128x128.png">
+    <link rel="icon" type="image/png" sizes="144x144" href="./favicon/favicon-144x144.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./favicon/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="./favicon/favicon-512x512.png">
+    <!-- APPLE TOUCH ICONS -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+    <!-- MANIFEST -->
+    <link rel="manifest" href="/favicon/manifest.json">
+    <title>Mohamed Abdessattar Elyagoubi - Full-Stack Developer</title>
+</head>
 
-		<div class="global-color">
-			<i class="setting-toggle fa-solid fa-gear"></i>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="#home" class="logo">Abdessattar</a>
+        <ul class="nav-links">
+            <li class="home-mt"><a class="nav-link active" href="#home">Home</a></li>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#projects">Projects</a></li>
+            <li><a class="nav-link" href="#skills">Skills</a></li>
+            <li><a class="nav-link" href="#education">Education</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <span class="menu-toggle"><i class="ti ti-category-filled"></i></span>
+    </nav>
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <p class="online">
+            <span class="indicator"></span> Available For Work
+        </p>
+        <a href="https://ecoshift.code-z.app/" class="badge" target="_blank">
+            <span class="new">New</span> EcoShift is live!
+            <i class="ti ti-chevron-right ang-right"></i>
+        </a>
+        <h1>Builder <span class="gradient-text">of</span> Scalable Web Systems</h1>
+        <p class="subheading">Hello, I'm Mohamed Abdessattar Elyagoubi A Full-Stack Developer</p>
+        <p class="subheading auto-type"></p>
+        <div class="hero-btns-sec">
+            <button class="hero-btn open-drawer-btn">Let's Connect
+                <i class="ti ti-heart-handshake arr-right"></i>
+            </button>
+            <div class="drawer-overlay"></div>
+            <div class="drawer">
+                <div class="drag-handle"></div>
+                <div class="drawer-links">
+                    <a href="https://www.instagram.com/abdessattar23/" class="drawer-icon">
+                        <img src="./assets/svg/instagram.svg" alt="Instagram">
+                    </a>
+                    <a href="https://github.com/abdessattar23" class="drawer-icon">
+                        <img src="./assets/svg/github-1.svg" alt="GitHub">
+                    </a>
+                    <a href="mailto:elyagoubiabdessattar@gmail.com" class="drawer-icon">
+                        <img src="./assets/svg/mail.svg" alt="Gmail">
+                    </a>
+                </div>
+                <a href="mailto:elyagoubiabdessattar@gmail.com" class="drawer-btn">
+                    <img src="./assets/svg/mail.svg" alt="Gmail">
+                    elyagoubiabdessattar@gmail.com
+                </a>
+                <a href="tel:+212605352337" class="drawer-btn">
+                    <img src="./assets/svg/phone.svg" alt="Call">
+                    Call Now
+                </a>
+                <p>Or Send A Message</p>
+                <form method="POST" class="contact-form" id="form">
+                    <input type="hidden" name="access_key" value="02f43a7b-d99e-46a6-9fad-bec22fc8ac2e">
+                    <input type="hidden" name="from_name" value="Portfolio">
+                    <input type="hidden" name="subject" value="New Message">
+                    <input type="email" name="email" class="input-field" placeholder="Your Email" required="">
+                    <textarea name="message" class="input-field" placeholder="Your Message" rows="4" required=""></textarea>
+                    <button type="submit" class="send-btn">Send Message</button>
+                    <div class="result" id="result"></div>
+                </form>
+            </div>
+            <span class="email" id="email-text"><i id="copy-icon" class="ti ti-copy copy-btn"></i>
+                elyagoubiabdessattar@gmail.com
+            </span>
+        </div>
+    </section>
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+        <div class="main-title">
+            <div class="sec-title">
+                <span>ABOUT ME</span>
+                <h2>About Me</h2>
+            </div>
+            <p>MORE ABOUT ME</p>
+        </div>
+        <div class="about-details">
+            <div class="about-content">
+                <h3>Hi there! I'm <span class="gradient-text">Mohamed Abdessattar Elyagoubi</span></h3>
+                <p>
+                    Full-stack developer with real production experience across frontend, backend, automation, and infrastructure. Strong focus on Java ecosystems (Spring Boot, JEE) and modern web stacks (Angular, Next.js). Built and deployed applications using Docker, CI/CD pipelines, and self-hosted platforms. Hands-on with Linux servers, Nginx, Coolify, and cloud providers. With 3 Years Of Experience In Web Development.
+                </p>
+                <p>
+                    Background includes freelancing, hackathons, and an in-person internship at Technopark Casablanca. Oriented toward clean architecture, reliability, and system-level thinking. I'm Naturally Curious, Quietly Confident, And Always Pushing My Limits Every Day To Become A Better Developer.
+                </p>
+                <div class="about-links">
+                    <a href="https://www.instagram.com/abdessattar23/" class="about-icon" data-tooltip="Instagram">
+                        <img src="./assets/svg/instagram.svg" alt="Instagram">
+                    </a>
+                    <a href="https://github.com/abdessattar23" class="about-icon" data-tooltip="GitHub">
+                        <img src="./assets/svg/github-1.svg" alt="GitHub">
+                    </a>
+                    <a href="mailto:elyagoubiabdessattar@gmail.com" class="about-icon" data-tooltip="Gmail">
+                        <img src="./assets/svg/mail.svg" alt="Gmail">
+                    </a>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="./assets/img/profile.jpg" alt="Mohamed Abdessattar Elyagoubi" loading="lazy">
+            </div>
+        </div>
+    </section>
+    <!-- PROJECTS SECTION -->
+    <section class="projects" id="projects">
+        <div class="main-title">
+            <div class="sec-title">
+                <span>PORTFOLIO</span>
+                <h2>Projects</h2>
+            </div>
+            <p>FEATURED CASE STUDIES</p>
+        </div>
+        <div class="project-container">
+            <div class="project-card">
+                <img src="./assets/img/gitguide.png" alt="P-1" loading="lazy">
+                <h3 class="project-title">GitGuide</h3>
+                <p class="project-description">
+                    VS Code extension enforcing Git best practices.
+                </p>
+                <div class="tags">
+                    <span class="tag">Node.js</span>
+                    <span class="tag">TypeScript</span>
+                    <span class="tag">VS Code API</span>
+                </div>
+                <div class="buttons">
+                    <a href="https://github.com/abdessattar23/gitguide" class="btn" target="_blank">
+                        <img src="./assets/svg/github-2.svg" alt="GitHub">
+                        Source Code
+                    </a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="./assets/img/wetalentify.png" alt="P-2" loading="lazy">
+                <h3 class="project-title">WeTalentify</h3>
+                <p class="project-description">
+                    Automated recruitment and talent-matching platform.
+                </p>
+                <div class="tags">
+                    <span class="tag">Next.js</span>
+                    <span class="tag">TypeScript</span>
+                    <span class="tag">MongoDB</span>
+                    <span class="tag">AI Workflows</span>
+                </div>
+                <div class="buttons">
+                    <a href="https://wetalentify.com/" class="btn" target="_blank">
+                        <img src="./assets/svg/external-link.svg" alt="Link">
+                        Website
+                    </a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="./assets/img/winsight360.png" alt="P-3" loading="lazy">
+                <h3 class="project-title">Winsight360</h3>
+                <p class="project-description">
+                    Enterprise survey platform with reward mechanisms.
+                </p>
+                <div class="tags">
+                    <span class="tag">Next.js</span>
+                    <span class="tag">TypeScript</span>
+                    <span class="tag">MongoDB</span>
+                </div>
+                <div class="buttons">
+                    <a href="https://winsight360.com/" class="btn" target="_blank">
+                        <img src="./assets/svg/external-link.svg" alt="Link">
+                        Website
+                    </a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="./assets/img/ecoshift.png" alt="P-4" loading="lazy">
+                <h3 class="project-title">EcoShift</h3>
+                <p class="project-description">
+                    Carbon footprint tracking platform (Hackathon winner).
+                </p>
+                <div class="tags">
+                    <span class="tag">Web Stack</span>
+                    <span class="tag">WhatsApp API</span>
+                    <span class="tag">LinkedIn API</span>
+                </div>
+                <div class="buttons">
+                    <a href="https://ecoshift.code-z.app/" class="btn" target="_blank">
+                        <img src="./assets/svg/external-link.svg" alt="Link">
+                        Website
+                    </a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="./assets/img/go-whatsapp-api.png" alt="go-whatsapp-api" loading="lazy">
+                <h3 class="project-title">go-whatsapp-api</h3>
+                <p class="project-description">
+                    Free unofficial WhatsApp API wrapper exposing REST API with OpenAPI specification. Supports multidevice and memory-optimized using Go.
+                </p>
+                <div class="tags">
+                    <span class="tag">Go</span>
+                    <span class="tag">REST API</span>
+                    <span class="tag">WhatsApp API</span>
+                    <span class="tag">OpenAPI</span>
+                    <span class="tag">Multidevice</span>
+                    <span class="tag">Memory Optimized</span>
+                </div>
+                <div class="buttons">
+                    <a href="#" class="btn" target="_blank">
+                        
+                        Internal Project
+                    </a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/abdessattar23?tab=repositories" class="view-more">
+            View More Projects On GitHub
+            <img src="./assets/svg/external-link.svg" alt="Link">
+        </a>
+    </section>
+    <!-- SKILLS SECTION -->
+    <section class="skills" id="skills">
+        <div class="main-title">
+            <div class="sec-title">
+                <span>SKILLS</span>
+                <h2>Skills</h2>
+            </div>
+            <p>I CONSTANTLY TRY TO IMPROVE</p>
+        </div>
+        <div class="tech-stacks">
+            <div class="tech-item">
+                <i class="devicon-html5-plain colored"></i>
+                HTML
+            </div>
+            <div class="tech-item">
+                <i class="devicon-css3-plain colored"></i>
+                CSS
+            </div>
+            <div class="tech-item">
+                <i class="devicon-javascript-plain colored"></i>
+                JavaScript
+            </div>
+            <div class="tech-item">
+                <i class="devicon-typescript-plain colored"></i>
+                TypeScript
+            </div>
+            <div class="tech-item">
+                <i class="devicon-python-plain colored"></i>
+                Python
+            </div>
+            <div class="tech-item">
+                <i class="devicon-django-plain colored"></i>
+                Django
+            </div>
+            <div class="tech-item">
+                <i class="devicon-java-plain colored"></i>
+                Java
+            </div>
+            <div class="tech-item">
+                <i class="devicon-go-plain colored"></i>
+                Go
+            </div>
+            <div class="tech-item">
+                <i class="devicon-spring-plain colored"></i>
+                Spring Boot
+            </div>
+            <div class="tech-item">
+                <i class="devicon-java-plain colored"></i>
+                JEE
+            </div>
+            <div class="tech-item">
+                <i class="devicon-angularjs-plain colored"></i>
+                Angular
+            </div>
+            <div class="tech-item">
+                <i class="devicon-nodejs-plain colored"></i>
+                Node.js
+            </div>
+            <div class="tech-item">
+                <i class="devicon-express-original colored"></i>
+                Express
+            </div>
+            <div class="tech-item">
+                <i class="devicon-nextjs-plain colored"></i>
+                Next.js
+            </div>
+            <div class="tech-item">
+                <i class="devicon-php-plain colored"></i>
+                PHP
+            </div>
+            <div class="tech-item">
+                <i class="devicon-tailwindcss-plain colored"></i>
+                Tailwind
+            </div>
+            <div class="tech-item">
+                <i class="devicon-mongodb-plain colored"></i>
+                MongoDB
+            </div>
+            <div class="tech-item">
+                <i class="devicon-postgresql-plain colored"></i>
+                Supabase
+            </div>
+            <div class="tech-item">
+                <i class="devicon-linux-plain colored"></i>
+                Linux
+            </div>
+            <div class="tech-item">
+                <i class="devicon-nginx-original colored"></i>
+                Nginx
+            </div>
+            <div class="tech-item">
+                <i class="devicon-docker-plain colored"></i>
+                Docker
+            </div>
+            <div class="tech-item">
+                <i class="devicon-jenkins-plain colored"></i>
+                Jenkins
+            </div>
+            <div class="tech-item">
+                <i class="devicon-sonarqube-plain colored"></i>
+                SonarQube
+            </div>
+            <div class="tech-item">
+                <i class="devicon-docker-plain colored"></i>
+                Coolify
+            </div>
+            <div class="tech-item">
+                <i class="devicon-git-plain colored"></i>
+                Git
+            </div>
+            <div class="tech-item">
+                <i class="devicon-github-original colored"></i>
+                GitHub
+            </div>
+            <div class="tech-item">
+                <i class="devicon-selenium-original colored"></i>
+                Selenium
+            </div>
+            <div class="tech-item">
+                <i class="devicon-nodejs-plain colored"></i>
+                Puppeteer
+            </div>
+            <div class="tech-item">
+                <i class="devicon-amazonwebservices-plain colored"></i>
+                AWS
+            </div>
+            <div class="tech-item">
+                <i class="devicon-googlecloud-plain colored"></i>
+                GCP
+            </div>
+            <div class="tech-item">
+                <i class="devicon-vscode-plain colored"></i>
+                VSCode
+            </div>
+            <div class="tech-item">
+                <i class="devicon-vercel-plain colored"></i>
+                Vercel
+            </div>
+            <div class="tech-item">
+                <i class="devicon-netlify-original colored"></i>
+                Netlify
+            </div>
+        </div>
+    </section>
+    <!-- MARQUEE -->
+    <marquee onmouseover="this.stop()" onmouseout="this.start()" behavior="stop" direction="left" scrollamount="9">
+        ✦ SCALABLE ✦ SECURE ✦ RELIABLE ✦ PERFORMANT ✦ MAINTAINABLE ✦ ARCHITECTURAL ✦ OPTIMIZED ✦ RESILIENT ✦ ENGINEERED
+    </marquee>
+    <!-- EDUCATION SECTION -->
+    <section class="education" id="education">
+        <div class="main-title">
+            <div class="sec-title">
+                <span>EDUCATION</span>
+                <h2>Education</h2>
+            </div>
+            <p>ACADEMIC MILESTONES</p>
+        </div>
+        <div class="education-section">
+            <div class="education-container">
+                <i class="ti ti-school"></i>
+                <h3 class="degree">Full-Stack Web Development</h3>
+                <p class="date">2024 - Present</p>
+                <p class="school">YouCode (UM6P), Morocco</p>
+                <span class="education-line"></span>
+            </div>
+            <div class="education-container">
+                <i class="ti ti-school"></i>
+                <h3 class="degree">Baccalaureate in Physical Sciences</h3>
+                <p class="date">2021 - 2024</p>
+                <p class="school">Abdelkhalek Torres High School, Morocco</p>
+                <span class="education-line"></span>
+            </div>
+            <div class="education-container">
+                <i class="ti ti-school"></i>
+                <h3 class="degree">Self-Learning in Software Development</h3>
+                <p class="date">Ongoing</p>
+                <p class="school">Web Development, Programming Fundamentals</p>
+            </div>
+        </div>
+    </section>
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+        <div class="main-title">
+            <div class="sec-title">
+                <span>CONTACT</span>
+                <h2>Contact</h2>
+            </div>
+            <p>GET IN TOUCH</p>
+        </div>
+        <div class="contact-description">
+            <p>
+                I'm Available For Full-time Roles & Freelance Projects.<br>My Inbox Is Always Open,<br>
+                Whether You Have A Question<br>Or<br>Just Want To Say Hi,<br>I'll Try My Best To Get Back To You!
+            </p>
+            <a href="mailto:elyagoubiabdessattar@gmail.com" class="contact-btn">
+                Let's Chat
+                <i class="ti ti-send-2"></i>
+            </a>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="https://www.instagram.com/abdessattar23/" class="footer-icon" data-tooltip="Instagram">
+                    <img src="./assets/svg/instagram.svg" alt="Instagram">
+                </a>
+                <a href="https://github.com/abdessattar23" class="footer-icon" data-tooltip="GitHub">
+                    <img src="./assets/svg/github-1.svg" alt="GitHub">
+                </a>
+                <a href="mailto:elyagoubiabdessattar@gmail.com" class="footer-icon" data-tooltip="Gmail">
+                    <img src="./assets/svg/mail.svg" alt="Gmail">
+                </a>
+            </div>
+            <p class="copyright">
+                © 2025 Mohamed Abdessattar Elyagoubi. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+    <!-- JAVASCRIPT FILES -->
+    <script src="./script.js"></script>
+    <script src="./assets/js/confetti.js"></script>
+    <script src="./assets/js/typed.js"></script>
+    <script>
+        var typed = new Typed('.auto-type', {
+            strings: ['Full-Stack Developer', 'Java Spring Developer', 'Backend Engineer', 'Automation Engineer'],
+            typeSpeed: 40,
+            backSpeed: 40,
+            smartBackspace: true,
+            showCursor: false,
+            loop: true
+        });
+    </script>
 
-			<div class="inner">
-				<div class="overlay"></div>
-				<div class="global-color-option">
-					<i class="close-settings fa-solid fa-xmark"></i>
 
-					<h2>Configuration</h2>
-					<div class="global-color-option-inner">
-						<p>Colors</p>
-						<div class="color-boxed">
-							<a href="#" data-color="#28e98c" class="color1 active"></a>
-							<a href="#" data-color="#e4af12" class="color2"></a>
-							<a href="#" data-color="#fe6f1d" class="color3"></a>
-							<a href="#" data-color="#14c5fd" class="color4"></a>
-							<a href="#" data-color="#c0c0c0" class="color5"></a>
-							<a href="#" data-color="#1338f3" class="color6"></a>
-							<a href="#" data-color="#f31313" class="color7"></a>
-							<a href="#" data-color="#ff99cc" class="color8"></a>
-						</div>
-		<!--				<p>THREE DIMENSIONAL SHAPES</p>
-						<ul class="themes">
-						<!--	<li>
-								<a href="index.html">3D Abstract Ball</a>
-							</li>
-							<li>
-								<a href="page-02.html">Network Plexus</a>
-							</li>
-							<li>
-								<a href="page-03.html">Water Waves</a>
-							</li>
-							<li>
-								<a href="page-04.html">Abstract Triangles</a>
-							</li>
-							<li>
-								<a href="page-05.html">Abstract Wave</a>
-							</li>
-							<li class="active">-->
-							<!--	<a href="page-06.html">Golden 3D Lines</a>
-							</li>
-						<!--	<li>
-								<a href="page-07.html">Solid Color</a>
-							</li>-->
-					<!--	</ul>-->
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="sidebar">
-			<div class="overlay"></div>
-			<div class="inner">
-				<div class="menu-wrap">
-					<p>Menu</p>
-					<ul class="menu">
-						<li>
-							<a href="#home" class="scroll-to active">
-								<i class="fa-solid fa-house"></i>
-								<span>Home</span>
-							</a>
-						</li>
-						<li>
-							<a href="#about" class="scroll-to">
-								<i class="fa-regular fa-user"></i>
-								<span>About</span>
-							</a>
-						</li>
-						<li>
-							<a
-								href="#services"
-								class="scroll-to d-flex align-items-center">
-								<i class="fa-solid fa-screwdriver-wrench"></i>
-								<span>Services</span>
-							</a>
-						</li>
-						<li>
-							<a href="#skills" class="scroll-to">
-								<i class="fa-solid fa-shapes"></i>
-								<span>Skills</span>
-							</a>
-						</li>
-						<li>
-							<a href="#portfolio" class="scroll-to">
-								<i class="fa-solid fa-grip-vertical"></i>
-								<span>Portfolios</span>
-							</a>
-						</li>
-						<li>
-							<a href="#contact" class="scroll-to">
-								<i class="fa-regular fa-envelope"></i>
-								<span>Contact</span>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<div class="social">
-					<p>Social</p>
-					<ul>
-						<li>
-							<a
-								href="https://twitter.com/AbdessattarElya"
-								target="blank">
-								<i class="fa-brands fa-twitter"></i>
-							</a>
-						</li>
-						<li>
-							<a href="https://github.com/abdessattar23" target="blank">
-								<i class="fa-brands fa-github"></i>
-							</a>
-						</li>
-						<li>
-							<a href="https://dev.to/Abdessattar" target="blank">
-								<i class="fa-brands fa-dev"></i>
-							</a>
-						</li>
-						<li>
-							<a
-								href="https://instagram.com/abdessattar23"
-								target="blank">
-								<i class="fa-brands fa-instagram"></i>
-							</a>
-						</li>
-						<li>
-							<a
-								href="https://wa.me/+212682993078"
-								target="blank">
-								<i class="fa-brands fa-whatsapp"></i>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-
-		<ul class="scroll-nav">
-			<li>
-				<a href="#home" class="scroll-to active">
-					<span>Home</span>
-					<i class="fa-solid fa-house"></i>
-				</a>
-			</li>
-			<li>
-				<a href="#about" class="scroll-to">
-					<span>About</span>
-					<i class="fa-regular fa-user"></i>
-				</a>
-			</li>
-			<li>
-				<a href="#services" class="scroll-to">
-					<span>Services</span>
-					<i class="fa-solid fa-screwdriver-wrench"></i>
-				</a>
-			</li>
-			<li>
-				<a href="#skills" class="scroll-to">
-					<span>Skills</span>
-					<i class="fa-solid fa-shapes"></i>
-				</a>
-			</li>
-			<li>
-				<a href="#portfolio" class="scroll-to">
-					<span>Portfolios</span>
-					<i class="fa-solid fa-grip-vertical"></i>
-				</a>
-			</li>
-			<li>
-				<a href="#contact" class="scroll-to">
-					<span>Contact</span>
-					<i class="fa-regular fa-envelope"></i>
-				</a>
-			</li>
-		</ul>
-
-		<div class="left-sidebar">
-			<div class="sidebar-header">
-				<!--<span class="logo"></span>-->
-				<h1><span>Mohammed Abdessetar </span><span id="namep2">Elyagoubi</span></h1>
-			</div>
-			<!-- <img src="imgs/me.jpg" alt="" class="me" /> -->
-			<div class="img"></div>
-			<h2 class="email">elyagoubiabdessattar@gmail.com</h2>
-			<h2 class="address">Hay ElFath, Fez, Morocco</h2>
-			<p class="copyright">© 2025 Mohammed Abdessetar All Rights Reserved</p>
-			<ul class="social">
-				<li>
-					<a href="https://ma.linkedin.com/in/mohammed-abdessetar-elyagoubi-5780ba27b" target="blank">
-						<i class="fa-brands fa-linkedin"></i>
-					</a>
-				</li>
-				<li>
-					<a href="https://github.com/abdessattar23" target="blank">
-						<i class="fa-brands fa-github"></i>
-					</a>
-				</li>
-				<li>
-					<a href="https://dev.to/abdessattar" target="blank">
-						<i class="fa-brands fa-dev"></i>
-					</a>
-				</li>
-				<li>
-					<a
-						href="https://instagram.com/abdessattar23"
-						target="blank">
-						<i class="fa-brands fa-instagram"></i>
-					</a>
-				</li>
-			</ul>
-			<a href="https://wa.me/+212682993078" class="button">
-				<i class="fa-regular fa-envelope"></i>
-				<span>HIRE ME!</span>
-			</a>
-		</div>
-
-		<main class="droiders-main">
-			<div class="wrapper">
-				<div class="content">
-					<section class="home" id="home">
-						<div class="custom-container">
-							<div class="content content-width">
-								<div class="header">
-									<h4 class="subtitle">
-										<i class="fa-solid fa-house"></i>
-										<span>Introduce</span>
-									</h4>
-									<h1>
-										Hi I'm <span>Mohammed Abdessetar Elyagoubi</span>
-										Full-Stack Developer
-									</h1>
-								</div>
-								<p>
-									I create complex websites fully functioning to all browsers without any tiny bug.
-								</p>
-								<a href="#portfolio" class="go-to-project-btn">
-									<img src="imgs/round-text.png" alt="" />
-									<i class="fa-solid fa-arrow-down-long"></i>
-								</a>
-								<div class="facts">
-									<div class="left">
-										<h1>03+</h1>
-										<p>years of<br />Experience</p>
-									</div>
-									<div class="right">
-										<h1>20+</h1>
-										<p>projects completed</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-					<section class="about" id="about">
-						<div class="custom-container">
-							<div class="content content-width">
-								<div class="header">
-									<h4 class="subtitle">
-										<i class="fa-regular fa-user"></i>
-										<span>About</span>
-									</h4>
-									<h1>
-										As i'm
-										<span>Full-Stack Developer</span>
-									</h1>
-								</div>
-								<p class="text-center text-sm-start">
-									I have experience in creating server-side web applications using Nodejs, PHP (Laravel) and Flask. I have worked with various frameworks and
-									libraries such as React, Tailwind to build dynamic
-									and interactive websites that meet the client's
-									requirements and expectations. I have also used tools
-									such as Git, Github to manage the codebase, bundle
-									the assets and deploy the applications. Some of the
-									projects that I have worked on include a personal
-									portfolio website, a blog platform and a school system 
-									website.
-								</p>
-							</div>
-						</div>
-					</section>
-					<section class="services" id="services">
-						<div class="custom-container">
-							<div class="content content-width">
-								<div class="header">
-									<h4 class="subtitle">
-										<i class="fa-solid fa-screwdriver-wrench"></i>
-										<span>services</span>
-									</h4>
-									<h1>What <span>i do</span></h1>
-								</div>
-								<div class="services-items">
-									<div class="services-item">
-										<i class="fa-solid fa-tv"></i>
-										<h2>Websites & Applications</h2>
-										<p>
-											I can build Websites and Android/IOS/Desktop Applications<br />
-											using HTML, Javascript, Tailwind, PHP, Nodejs, ReactJs, ReactNative, Python.
-										</p>
-										<!--<span class="project">10 Projects</span>-->
-									</div>
-									<div class="services-item">
-										<i class="fa-solid fa-gamepad"></i>
-										<h2>UI/UX</h2>
-										<p>I can build websites and Applications with a user friendly interfaces with UI/UX</p>
-										<!--<span class="project">10 Projects</span>-->
-									</div>
-									<div class="services-item">
-										<i class="fa-solid fa-code"></i>
-										<h2>Clean Code</h2>
-										<p>
-											I can build websites and applications with clean and organized
-											code
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-					<section class="skills" id="skills">
-						<div class="custom-container">
-							<div class="content content-width">
-								<div class="header">
-									<h4 class="subtitle">
-										<i class="fa-solid fa-shapes"></i>
-										<span>my skills</span>
-									</h4>
-									<h1>My <span>Advantages</span></h1>
-								</div>
-								<div class="row skills">
-									<div class="col-md-3">
-										<div class="skill">
-											<div class="inner">
-												<img src="imgs/skill-02.png" alt="" />
-												<h1 class="percent">100%</h1>
-											</div>
-											<p class="name">HTML</p>
-										</div>
-									</div>
-									<div class="col-md-3">
-										<div class="skill">
-											<div class="inner">
-												<img src="imgs/skill-03.png" alt="" />
-												<h1 class="percent">85%</h1>
-											</div>
-											<p class="name">CSS</p>
-										</div>
-									</div>
-									<div class="col-md-3">
-										<div class="skill">
-											<div class="inner">
-												<img src="imgs/skill-04.png" alt="" />
-												<h1 class="percent">85%</h1>
-											</div>
-											<p class="name">JavaScript</p>
-										</div>
-									</div>
-									<div class="col-md-3">
-										<div class="skill">
-											<div class="inner">
-												<img src="imgs/skill-05.png" alt="" />
-												<h1 class="percent">87%</h1>
-											</div>
-											<p class="name">Python</p>
-										</div>
-									</div>
-									<div class="col-md-3">
-										<div class="skill">
-											<div class="inner">
-												<img src="imgs/skill-06.png" alt="" />
-												<h1 class="percent">100%</h1>
-											</div>
-											<p class="name">BootStrap</p>
-										</div>
-									</div>
-									<div class="col-md-3">
-										<div class="skill">
-											<div class="inner">
-												<img src="imgs/skill-07.png" alt="" />
-												<h1 class="percent">60%</h1>
-											</div>
-											<p class="name">ReactJS</p>
-										</div>
-									</div>
-									<div class="col-md-3">
-										<div class="skill">
-											<div class="inner">
-												<img src="imgs/skill-08.png" alt="" />
-												<h1 class="percent">85%</h1>
-											</div>
-											<p class="name">Git</p>
-										</div>
-									</div>
-									<div class="col-md-3">
-										<div class="skill">
-											<div class="inner">
-												<img src="imgs/skill-09.png" alt="" />
-												<h1 class="percent">84%</h1>
-											</div>
-											<p class="name">PHP</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-					<section class="portfolio" id="portfolio">
-						<div class="custom-container">
-							<div class="content content-width">
-								<div class="header">
-									<h4 class="subtitle">
-										<i class="fa-solid fa-grip-vertical"></i>
-										<span>portfolio</span>
-									</h4>
-									<h1>Featured <span>Projects</span></h1>
-								</div>
-								<div class="row portfolio-items">
-									<div class="col-md-12">
-										<div class="portfolio-item">
-											<div class="inner">
-												<img src="imgs/project-03.png" alt="" />
-
-												<ul class="skills">
-													<li>HTML</li>
-													<li>CSS</li>
-													<li>JS</li>
-													<li>PHP</li>
-													<li>BootStrap</li>
-												</ul>
-											</div>
-											<h2>
-												<a
-													onclick="event.preventDefault();show();"
-													href="#"
-													
-													>Portfoliyo - Dynamic</a
-												>
-											</h2>
-										</div>
-									</div>
-									<div class="col-md-12">
-										<div class="portfolio-item">
-											<div class="inner">
-												<img src="imgs/project-04.png" alt="" />
-
-												<ul class="skills">
-													<li>HTML</li>
-													<li>CSS</li>
-													<li>JS</li>
-													<li>Bootstrap</li>
-													<li>Nodejs</li>
-												</ul>
-											</div>
-											<h2>
-												<a
-													onclick="event.preventDefault();show();"
-													href="#"
-													
-													>MelodyMind - OnePage</a
-												>
-											</h2>
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="portfolio-item">
-											<div class="inner">
-												<img src="imgs/project-01.png" alt="" />
-
-												<ul class="skills">
-													<li>HTML</li>
-													<li>CSS</li>
-													<li>JS</li>
-													<li>APIs</li>
-												</ul>
-											</div>
-											<h2>
-												<a
-													onclick="event.preventDefault();show();"
-													href="#"
-													
-													>R-Watch - Movies</a
-												>
-											</h2>
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="portfolio-item">
-											<div class="inner">
-												<img src="imgs/project-05.png" alt="" />
-
-												<ul class="skills">
-													<li>HTML</li>
-													<li>CSS</li>
-													<li>JS</li>
-												</ul>
-											</div>
-											<h2>
-												<a
-													onclick="event.preventDefault();show();"
-													href="#"
-													
-													>This Portfolio</a
-												>
-											</h2>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-					<section class="contact" id="contact">
-						<div class="custom-container">
-							<div class="content content-width">
-								<div class="header">
-									<h4 class="subtitle">
-										<i class="fa-regular fa-envelope"></i>
-										<span>contact</span>
-									</h4>
-									<h1>Let's work <span>Together</span></h1>
-								</div>
-							
-								<div class="row contact-items">
-									<div class="col-md-6">
-										<div class="contact-item">
-											<i class="fa-brands fa-whatsapp"></i>
-											<h2>WhatsApp</h2>
-											<p>+212682993078</p>
-											<a href="https://wa.me/+212682993078">
-												<span>Send a message</span>
-												<i class="fa-solid fa-paper-plane"></i>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-				</div>
-			</div>
-
-<footer style="background:transparent;" class="">
-  <div class="container">
-    <div class="row" style="">
-    <div class="f" style="text-align:center;color:white">
-				
-					
-							<a
-								href="https://ma.linkedin.com/in/mohammed-abdessetar-elyagoubi-5780ba27b"
-								target="blank">
-								<i class="fa-brands fa-linkedin fa-2x"></i>
-							</a>
-					
-							<a href="https://github.com/abdessattar23" target="blank">
-								<i class="fa-brands fa-github fa-2x"></i>
-							</a>
-						
-							<a href="https://dev.to/Abdessattar" target="blank">
-								<i class="fa-brands fa-dev fa-2x"></i>
-							</a>
-					
-							<a
-								href="https://instagram.com/abdessattar23"
-								target="blank">
-								<i class="fa-brands fa-instagram fa-2x"></i>
-							</a>
-						
-							<a
-								href="https://wa.me/+212682993078"
-								target="blank">
-								<i class="fa-brands fa-whatsapp fa-2x"></i>
-							</a>
-							<br/>
-							<p class="copyright">© 2025 Mohammed Abdessetar. All Rights Reserved</p>
-						
-				</div>
-    </div>
-    </div>
-</footer>
-		</main>
-		<div class="progress-bar"></div>
-		<script src="js/bootstrap.bundle.js"></script>
-		<script src="js/main.js"></script>
-	</body>
-</html>
+</body></html>

@@ -1,0 +1,32 @@
+# Mohammed Abdessetar Elyagoubi
+
+> Software Engineer Java | OpenTelemetry Contributor | AI & Cybersecurity Enthusiast
+
+## About Me
+
+Software Engineer Java at Sofrecom (Orange Group subsidiary) in Rabat, Morocco. I build and operate production Java/Spring Boot microservices and modern web applications. 
+I am a contributor to the OpenTelemetry Java SDK (CNCF), with a focus on reliability, concurrency, and system-level correctness.
+With 3 Years Of Experience In Web Development. Passionate about AI, cybersecurity, and clean architecture.
+
+## Links & Contact
+- **Website**: https://abdessattar.is-a.dev/
+- **LinkedIn**: https://linkedin.com/in/mohammed-abdessetar-elyagoubi
+- **X (Twitter)**: https://x.com/AbdessattarElya
+- **GitHub**: https://github.com/abdessattar23
+- **Email**: elyagoubiabdessattar@gmail.com
+- **Resume**: https://abdessattar.is-a.dev/Mohammed_Abdessetar_Elyagoubi_Resume.pdf
+
+## Selected Projects
+- **OpenTelemetry Java SDK**: Contributor to CNCF. Bounded the JdkHttpSender thread pool to prevent unbounded thread creation and resource exhaustion.
+- **Presence Card**: Self-hosted presence card showing now-playing music and activity as an animated SVG for GitHub profile README. (Go, SVG)
+- **GitGuide**: VS Code extension enforcing Git best practices. (Node.js, TypeScript)
+- **WeTalentify**: Automated recruitment and talent-matching platform. (Next.js, MongoDB, AI)
+- **Winsight360**: Enterprise survey platform with reward mechanisms. (Next.js, MongoDB)
+- **EcoShift**: Carbon footprint tracking platform (Hackathon winner). (Java, Spring Boot, Next.js)
+
+## Core Technical Skills
+- **Languages**: Java, TypeScript, JavaScript, Python, Go, PHP, SQL, C
+- **Frameworks**: Spring Boot, JEE, Next.js, React, Angular, Tailwind CSS, Express
+- **Cloud & DevOps**: Docker, CI/CD (GitLab CI, GitHub Actions), Cloud Foundry, AWS, GCP, Linux, Nginx, SonarQube
+- **Databases**: PostgreSQL, MongoDB, TimescaleDB, Redis, Supabase
+- **Focus Areas**: Microservices, REST API design, observability (OpenTelemetry), LLM integration & fine-tuning, automation

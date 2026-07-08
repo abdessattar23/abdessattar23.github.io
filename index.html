@@ -213,6 +213,44 @@
             <p>FEATURED CASE STUDIES</p>
         </div>
         <div class="project-container">
+
+            <div class="project-card">
+                <img src="./assets/img/ctf_project.png" alt="Security Research & CTF" loading="lazy">
+                <h3 class="project-title">Security Research & CTF</h3>
+                <p class="project-description">
+                    Pentest findings, reverse engineering, and CTF writeups demonstrating deep understanding of cybersecurity vulnerabilities and exploits.
+                </p>
+                <div class="tags">
+                    <span class="tag">Pentesting</span>
+                    <span class="tag">CTF</span>
+                    <span class="tag">Reverse Engineering</span>
+                </div>
+                <div class="buttons">
+                    <a href="https://github.com/abdessattar23?tab=repositories&q=security" class="btn" target="_blank">
+                        <img src="./assets/svg/github-2.svg" alt="GitHub">
+                        View Research
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="./assets/img/llm_project.png" alt="Darija LLM Fine-Tuning" loading="lazy">
+                <h3 class="project-title">Darija LLM Fine-Tuning</h3>
+                <p class="project-description">
+                    Fine-tuned Qwen2.5-1.5B on a curated Moroccan-Darija conversational dataset to improve understanding of a low-resource dialect.
+                </p>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">PyTorch</span>
+                    <span class="tag">Transformers</span>
+                </div>
+                <div class="buttons">
+                    <a href="https://github.com/abdessattar23" class="btn" target="_blank">
+                        <img src="./assets/svg/github-2.svg" alt="GitHub">
+                        Source Code
+                    </a>
+                </div>
+            </div>
             <div class="project-card">
                 <img src="./assets/img/opentelemetry.png" alt="OpenTelemetry Java SDK" loading="lazy">
                 <h3 class="project-title">OpenTelemetry Java SDK</h3>
@@ -623,6 +661,21 @@
     </script>
 
 
+
+    <!-- TERMINAL EASTER EGG -->
+    <div id="terminal-overlay" class="terminal-overlay">
+        <div class="terminal-window">
+            <div class="terminal-header">
+                <span class="terminal-btn close-btn"></span>
+                <span class="terminal-btn min-btn"></span>
+                <span class="terminal-btn max-btn"></span>
+                <span class="terminal-title">root@elyagoubi:~</span>
+            </div>
+            <div class="terminal-body" id="terminal-body">
+                <!-- Content injected via JS -->
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

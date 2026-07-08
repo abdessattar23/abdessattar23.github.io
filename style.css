@@ -1064,3 +1064,153 @@ footer {
     }
 
 }
+/* ========================================= */
+/* TERMINAL EASTER EGG                       */
+/* ========================================= */
+
+.terminal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(5px);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+}
+
+.terminal-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.terminal-window {
+    width: 80%;
+    max-width: 800px;
+    height: 60vh;
+    background: #0d0d0d;
+    border: 1px solid #333;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(0, 255, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.terminal-header {
+    background: #1a1a1a;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #333;
+}
+
+.terminal-btn {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.close-btn { background: #ff5f56; }
+.min-btn { background: #ffbd2e; }
+.max-btn { background: #27c93f; }
+
+.terminal-title {
+    margin: 0 auto;
+    color: #888;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.terminal-body {
+    padding: 20px;
+    flex: 1;
+    overflow-y: auto;
+    color: #0f0;
+    font-size: 16px;
+    line-height: 1.5;
+    text-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+}
+
+.terminal-body p {
+    margin: 5px 0;
+    font-weight: 500;
+}
+
+.cursor-blink {
+    display: inline-block;
+    width: 10px;
+    height: 18px;
+    background: #0f0;
+    animation: blink 1s step-end infinite;
+    vertical-align: middle;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+/* ========================================= */
+/* HOVER EFFECTS & ENHANCED CTAS             */
+/* ========================================= */
+
+.tech-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.tech-item:hover {
+    transform: scale(1.1) translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.hire-cta-banner {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, rgba(20,20,30,0.8), rgba(10,10,15,0.9));
+    border-radius: 12px;
+    margin: 40px auto;
+    max-width: 800px;
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+.hire-cta-banner h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.hire-cta-banner p {
+    font-size: 1.1rem;
+    color: #aaa;
+    margin-bottom: 30px;
+}
+
+.cta-btn-large {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+    color: #fff !important;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-btn-large:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(79, 172, 254, 0.4);
+}

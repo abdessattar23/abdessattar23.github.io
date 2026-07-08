@@ -292,3 +292,77 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+
+
+// ==========================================
+// TERMINAL EASTER EGG (KEYLOGGER)
+// ==========================================
+document.addEventListener("DOMContentLoaded", function () {
+    const SECRET_WORD = "sudo";
+    let typedKeys = "";
+    
+    const terminalOverlay = document.getElementById("terminal-overlay");
+    const terminalBody = document.getElementById("terminal-body");
+    const closeBtn = document.querySelector(".close-btn");
+
+    if (!terminalOverlay || !terminalBody) return;
+
+    // Listen for the secret word
+    document.addEventListener("keydown", function(e) {
+        if (terminalOverlay.classList.contains("active")) return;
+        
+        // Add key to buffer and keep it to the length of the secret word
+        typedKeys += e.key.toLowerCase();
+        if (typedKeys.length > SECRET_WORD.length) {
+            typedKeys = typedKeys.slice(-SECRET_WORD.length);
+        }
+
+        if (typedKeys === SECRET_WORD) {
+            triggerTerminal();
+            typedKeys = ""; // reset
+        }
+    });
+
+    closeBtn.addEventListener("click", () => {
+        terminalOverlay.classList.remove("active");
+        terminalBody.innerHTML = "";
+    });
+
+    function triggerTerminal() {
+        terminalOverlay.classList.add("active");
+        
+        const commands = [
+            "Initializing root access...",
+            "[OK] Bypassing firewall...",
+            "[OK] Establishing secure connection...",
+            "Loading cyber_profile.sh...",
+            "--------------------------------",
+            "IDENTITY: Mohammed Abdessetar Elyagoubi",
+            "ROLE: Software Engineer & Cyber Enthusiast",
+            "SKILLS: Java, Spring Boot, OpenTelemetry, Pentesting, LLM Fine-Tuning",
+            "STATUS: ACCESS GRANTED.",
+            "--------------------------------",
+            "Ready for new challenges. Reach out if you need robust, secure systems."
+        ];
+
+        let i = 0;
+        terminalBody.innerHTML = "";
+        
+        function typeLine() {
+            if (i < commands.length) {
+                const p = document.createElement("p");
+                p.textContent = "> " + commands[i];
+                terminalBody.appendChild(p);
+                terminalBody.scrollTop = terminalBody.scrollHeight;
+                i++;
+                setTimeout(typeLine, Math.random() * 300 + 100);
+            } else {
+                const cursor = document.createElement("span");
+                cursor.className = "cursor-blink";
+                terminalBody.appendChild(cursor);
+            }
+        }
+        
+        setTimeout(typeLine, 500);
+    }
+});

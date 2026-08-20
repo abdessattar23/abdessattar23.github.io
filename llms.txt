@@ -18,6 +18,10 @@ Open to a conversation.
 
 ## Selected Projects
 - **OpenTelemetry Java SDK**: Contributor to CNCF. Bounded the JdkHttpSender thread pool to prevent unbounded thread creation and resource exhaustion. https://github.com/open-telemetry/opentelemetry-java/pull/8276
+- **WeTalentify**: Live recruitment and talent-matching platform. https://wetalentify.com/
+- **Winsight360**: Enterprise survey platform with reward mechanisms. Built during internship. https://winsight360.com/
+- **EcoShift**: Carbon footprint tracking platform. First prize at the hackathon. https://ecoshift.code-z.app/
+- **go-whatsapp-api**: Unofficial WhatsApp REST API wrapper in Go (internal).
 - **Presence Card**: Self-hosted presence card showing now-playing music and activity as an animated SVG for GitHub profile README. (Go, SVG)
 - **GitGuide**: VS Code extension that reminds you to commit, suggests feature branches, and snapshots work in progress. (TypeScript)
 - **Path2URL**: PHP library that converts relative file paths to absolute URLs in HTML, CSS, and JavaScript.

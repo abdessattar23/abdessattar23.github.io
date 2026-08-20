@@ -1,16 +1,16 @@
 # Mohammed Abdessetar Elyagoubi
 
-> Software Engineer Java | OpenTelemetry Contributor | AI & Cybersecurity Enthusiast
+> Software Engineer, Java/Spring @ Sofrecom (Orange), Rabat. Production microservices. OpenTelemetry Java contributor. Speaking at Devoxx Morocco 2026.
 
 ## About Me
 
-Software Engineer Java at Sofrecom (Orange Group subsidiary) in Rabat, Morocco. I build and operate production Java/Spring Boot microservices and modern web applications. 
-I am a contributor to the OpenTelemetry Java SDK (CNCF), with a focus on reliability, concurrency, and system-level correctness.
-With 3 Years Of Experience In Web Development. Passionate about AI, cybersecurity, and clean architecture.
+Software Engineer, Java/Spring at Sofrecom (Orange) in Rabat. I build and operate production microservices. Contributor to the OpenTelemetry Java SDK. Speaking at Devoxx Morocco 2026.
+
+Open to a conversation.
 
 ## Links & Contact
 - **Website**: https://abdessattar.is-a.dev/
-- **LinkedIn**: https://linkedin.com/in/mohammed-abdessetar-elyagoubi
+- **LinkedIn**: https://linkedin.com/in/abdessattar23
 - **X (Twitter)**: https://x.com/AbdessattarElya
 - **GitHub**: https://github.com/abdessattar23
 - **Email**: elyagoubiabdessattar@gmail.com

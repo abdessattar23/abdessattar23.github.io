@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     function copyEmail(event) {
-        const emailToCopy = "sayedanowar.dev@gmail.com";
+        const emailToCopy = "elyagoubiabdessattar@gmail.com";
         if (navigator.clipboard && navigator.clipboard.writeText) {
             navigator.clipboard
                 .writeText(emailToCopy)

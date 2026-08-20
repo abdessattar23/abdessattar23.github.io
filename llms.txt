@@ -10,23 +10,27 @@ Open to a conversation.
 
 ## Links & Contact
 - **Website**: https://abdessattar.is-a.dev/
-- **LinkedIn**: https://linkedin.com/in/abdessattar23
+- **LinkedIn**: https://linkedin.com/in/mohammed-abdessetar-elyagoubi
 - **X (Twitter)**: https://x.com/AbdessattarElya
 - **GitHub**: https://github.com/abdessattar23
 - **Email**: elyagoubiabdessattar@gmail.com
 - **Resume**: https://abdessattar.is-a.dev/Mohammed_Abdessetar_Elyagoubi_Resume.pdf
 
 ## Selected Projects
-- **OpenTelemetry Java SDK**: Contributor to CNCF. Bounded the JdkHttpSender thread pool to prevent unbounded thread creation and resource exhaustion.
+- **OpenTelemetry Java SDK**: Contributor to CNCF. Bounded the JdkHttpSender thread pool to prevent unbounded thread creation and resource exhaustion. https://github.com/open-telemetry/opentelemetry-java/pull/8276
+- **WeTalentify**: Live recruitment and talent-matching platform. https://wetalentify.com/
+- **Winsight360**: Enterprise survey platform with reward mechanisms. Built during internship. https://winsight360.com/
+- **EcoShift**: Carbon footprint tracking platform. First prize at the hackathon. https://ecoshift.code-z.app/
+- **go-whatsapp-api**: Unofficial WhatsApp REST API wrapper in Go (internal).
 - **Presence Card**: Self-hosted presence card showing now-playing music and activity as an animated SVG for GitHub profile README. (Go, SVG)
-- **GitGuide**: VS Code extension enforcing Git best practices. (Node.js, TypeScript)
-- **WeTalentify**: Automated recruitment and talent-matching platform. (Next.js, MongoDB, AI)
-- **Winsight360**: Enterprise survey platform with reward mechanisms. (Next.js, MongoDB)
-- **EcoShift**: Carbon footprint tracking platform (Hackathon winner). (Java, Spring Boot, Next.js)
+- **GitGuide**: VS Code extension that reminds you to commit, suggests feature branches, and snapshots work in progress. (TypeScript)
+- **Path2URL**: PHP library that converts relative file paths to absolute URLs in HTML, CSS, and JavaScript.
+- **FX-Deals**: Spring Boot service to import, validate, and persist FX deals with duplicate detection and bulk CSV ingest. (Java, PostgreSQL, Docker)
 
 ## Core Technical Skills
-- **Languages**: Java, TypeScript, JavaScript, Python, Go, PHP, SQL, C
-- **Frameworks**: Spring Boot, JEE, Next.js, React, Angular, Tailwind CSS, Express
-- **Cloud & DevOps**: Docker, CI/CD (GitLab CI, GitHub Actions), Cloud Foundry, AWS, GCP, Linux, Nginx, SonarQube
-- **Databases**: PostgreSQL, MongoDB, TimescaleDB, Redis, Supabase
-- **Focus Areas**: Microservices, REST API design, observability (OpenTelemetry), LLM integration & fine-tuning, automation
+- **Languages**: Java, JavaScript
+- **Frameworks**: Spring Boot
+- **Backend**: Microservices, REST APIs
+- **Observability**: OpenTelemetry
+- **Web**: HTML, CSS
+- **Data & Ops**: PostgreSQL, Docker

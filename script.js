@@ -335,14 +335,14 @@ document.addEventListener("DOMContentLoaded", function () {
             "Initializing root access...",
             "[OK] Bypassing firewall...",
             "[OK] Establishing secure connection...",
-            "Loading cyber_profile.sh...",
+            "Loading profile.sh...",
             "--------------------------------",
             "IDENTITY: Mohammed Abdessetar Elyagoubi",
-            "ROLE: Software Engineer & Cyber Enthusiast",
-            "SKILLS: Java, Spring Boot, OpenTelemetry, Pentesting, LLM Fine-Tuning",
+            "ROLE: Java Software Engineer · OpenTelemetry Java contributor",
+            "SKILLS: Java, Spring Boot, OpenTelemetry, PostgreSQL, Docker",
             "STATUS: ACCESS GRANTED.",
             "--------------------------------",
-            "Ready for new challenges. Reach out if you need robust, secure systems."
+            "Ready for new challenges. Reach out if you need reliable, observable systems."
         ];
 
         let i = 0;
